@@ -32,7 +32,13 @@ public class Main {
             }
             System.out.print(decimalNum[n] + ", ");
         }
-        System.out.println(Arrays.toString(chars));
+        for (int v = 0; v < chars.length; v++) {
+            if (v == chars.length-1) {
+                System.out.println(chars[v]);
+                break;
+            }
+            System.out.print(chars[v]+ ", ");
+        }
         // Task 3
         System.out.println("Задача 3");
         for (int i = arr.length - 1; i >= 0; i--) {
